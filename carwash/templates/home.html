@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+
+
+{% block content %}
+
+{% if request.user.is_authenticated %}
+<div> <h1>Mi ficha</h1></div>
+{% else %}
+
+{% include 'carousel.html' %}
+
+
+{% endif %}
+
+{% endblock %}

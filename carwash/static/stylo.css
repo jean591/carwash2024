@@ -1,0 +1,48 @@
+nav{
+    background-color:rgba(137, 11, 240, 0.726);
+}
+
+#logo{
+    width: 90px;
+    height: 70px;
+    opacity:3;
+    display: block;
+   
+
+}
+
+
+#carul{
+  margin: auto;
+}
+
+.carousel-inner {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    image-rendering:optimizeSpeed;
+  }
+
+h5{
+    color:darkorange;
+    font-weight: bold;
+}
+#icon_1{
+    margin-left: auto;
+    color: rgb(235, 229, 229); 
+    font-weight:700;
+}
+
+#icon_2{
+    margin-left: 30px;  
+    color: rgb(235, 229, 229);
+     font-weight:700;
+}
+
+
+
+

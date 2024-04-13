@@ -1,0 +1,17 @@
+
+    
+    {% if user.is_authenticated %}
+      
+        <a id="icon_1" type="btn-block" ><img src="/static/img/user.png" width="45"> <i>{{user.username|capfirst}}</i></a>
+        <a id="icon_2" type="btn-block" href="{% url 'logout' %}"> <img src="/static/img/logout.png"  width="45"> Cerrar Sesión</a>
+       
+       
+    {% else %}
+        
+        <a id="icon_1" type="btn-block"  href="{% url 'login' %}"><img src="/static/img/login.png" width="45">
+            Iniciar Sesión</a>
+        <a id="icon_2" type="btn-block"  href="{% url 'register' %}"><img src="/static/img/register.png" width="45">
+                Registrarse </a>
+        
+  
+    {% endif %}

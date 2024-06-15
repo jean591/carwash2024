@@ -6,7 +6,7 @@
 {% block content %}
 
 {% if request.user.is_authenticated %}
-<div> <h1>Mi ficha</h1></div>
+{% include 'ficha.html' %}
 {% else %}
 
 {% include 'carousel.html' %}

@@ -46,3 +46,21 @@ h5{
 
 
 
+#card{
+    width: 600px;
+    border-radius: 20px; 
+    background-color: rgb(210, 216, 195);
+}
+
+#inputtotal{
+    font-weight: bold;
+    color:darkgreen;
+
+}
+
+#btnficha{
+    padding-right:40px;
+    float: right;
+}
+
+

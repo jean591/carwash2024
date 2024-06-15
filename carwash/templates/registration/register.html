@@ -12,11 +12,11 @@
                   alt="Sample photo">
                 <div class="card-body p-4 p-md-5">
                   <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Registration Info</h3>
-                  <form method="POST" action="">
+                  <form method="POST" action="" class="row needs-validation" novalidate>
                     {% csrf_token %}
         
                     
-                            {{ form | crispy }}
+                            {{ form  | crispy  }}
                            <p>
                             <a class="card-link" href="{% url 'home' %}">Inicio</a>
                             <a class="card-link" href="{% url 'login' %}">Iniciar sesión</a>

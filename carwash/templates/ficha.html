@@ -1,0 +1,140 @@
+<br>
+    <div class="col d-flex justify-content-center">
+        <div id="cardficha" class="card">
+            <div class="card-body">
+              <h2 class="card-title  text-center">Formulario de Compra</h2>
+              <br>
+              <div class="container-fluid">
+             <form class="row g-12 needs-validation" novalidate  >
+                <div class="col-md-6 position-relative">
+                    <label for="nombre" class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                    <div class="invalid-tooltip">
+                       <i> ¡Porfavor ingresa su nombre!</i>
+                    </div>
+                    
+                </div>
+               
+
+                <div class="col-md-6 position-relative">
+                    <label for="region" class="form-label">Region</label>
+                    <select  id="region" class="form-select" style="font-weight:bold;"  required>
+                        <option selected disabled value="">Elige una opcion</option>
+                        <option value="1">Metropolitana</option>
+                    </select>
+                    <div class="invalid-tooltip">
+                      <i>¡Porfavor elige una region!</i>
+                    </div>
+                </div>
+                    <p>
+                <div class="col-md-6 position-relative" >
+                    <label for="rut" class="form-label">Rut</label>
+                    <input is="input-rut" class="form-control" id="rut" required>
+                    <script type="module" src="https://unpkg.com/html-input-rut"></script>
+                    <div class="invalid-tooltip">
+                      <i>¡Porfavor ingresa un rut correcto!</i>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 position-relative">
+                  <label for="comuna" class="form-label">Comunas</label>
+                  <select type="number"  id="comuna" class="form-select" style="font-weight:bold;" aria-label="Default select example" required>
+                      <option selected disabled value="">Elige una opcion</option>
+                      <option value="1">Huechuraba</option>
+                      <option value="2">Independencia</option>
+                      <option value="3">Lampa</option>
+                      <option value="4">Pudahuel</option>
+                      <option value="5">Quilicura</option>
+                  </select>
+                  <div class="invalid-tooltip">
+                    <i>¡Porfavor elige una comuna!</i>
+                  </div>
+
+                </div>
+              </p>
+
+            <div class="col-md-6 position-relative">
+                <label for="email" class="form-label">Correo</label>
+                <input type="email" name="email"  class="form-control" id="email" required>
+                <div class="invalid-tooltip">
+                  <i>¡Porfavor ingresa un correo correcto!</i>
+                </div> 
+            </div>
+          
+            <div class="col-md-6 position-relative">
+              <label for="tipolavado" class="form-label">Tipo de lavado</label>
+              <select type="number"  id="tipolavado" class="form-select" style="font-weight:bold;" aria-label="Default select example"required>
+                  <option selected disabled value="">Elige una opcion</option>
+                  <option value="1">Exterior</option>
+                  <option value="2">Interior</option>
+              </select>
+              <div class="invalid-tooltip">
+                <i>¡Porfavor elige el tipo de lavado!</i>
+              </div>
+            </div>
+
+            
+          <p>
+            <div class="col-md-6 position-relative">
+              <label for="cantidad" class="form-label">Cantidad de fichas</label>
+              <select type="number"  id="cantidad" class="form-select" style="font-weight:bold;" aria-label="Default select example" required>
+                  <option selected disabled value="">Elige una opcion</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+              </select>
+              <div class="invalid-tooltip">
+                <i>¡Porfavor elige la cantidad de ficha !</i>
+              </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div >
+              <br>
+            <div class="input-group"  >
+                <div id="inputtotal"  class="input-group-text"><i >Total a pagar</i></div>
+                <input type="text" class="form-control" required>
+              </div>
+            </div>
+        </div>
+          </p>
+
+
+        <div class="col-md-6">
+          <button id="btnficha"  type="submit" class="btn btn-light">Agregar <img style="width:30px;" src="static/img/agregcart.png" alt=""></button>
+        </div>
+        
+        <div class="col-md-6">
+          <button id="btnficha"  type="submit" class="btn btn-success">Pagar <img width="30px" src="static/img/dinero.png" alt=""></button>
+        </div>
+         
+            
+
+             </form>
+            </div>
+            </div>
+          </div>
+    </div>
+    <script>
+      (() => {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+  
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
+    </script>
+     
